@@ -14,6 +14,7 @@ def get_stock_data(ticker, start_date, end_date):
         ticker,
         start=start_dt,
         end=end_dt,
+        interval="1d",
         auto_adjust=True,
         progress=False,
     )
@@ -29,7 +30,7 @@ def get_stock_data(ticker, start_date, end_date):
 
 TICKER = "BTC-USD"
 
-df = get_stock_data(TICKER, "2025-07-14", "2026-07-14")
+df = get_stock_data(TICKER, "2023-07-14", "2026-07-14")
 
 print(df.head())
 print(df.columns)
