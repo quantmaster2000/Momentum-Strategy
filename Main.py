@@ -28,7 +28,7 @@ def get_stock_data(ticker, start_date, end_date):
 
 # Download data
 
-TICKER = "BTC-USD"
+TICKER = "QQQ"
 
 df = get_stock_data(TICKER, "2023-07-14", "2026-07-14")
 
